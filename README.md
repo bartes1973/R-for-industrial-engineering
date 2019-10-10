@@ -1,2 +1,2 @@
-# R_for_industrial_engineering
+# R for Industrial Engineering
 R Codes for Industrial Engineerings

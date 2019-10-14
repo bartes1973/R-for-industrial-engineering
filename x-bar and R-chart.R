@@ -52,7 +52,7 @@ xbar <- qcc(measure, type = "xbar", data.name = measure_unit)
 # Specify the warning limits (2 sigmas)
 (warn.limits.2 = limits.xbar(xbar$center, xbar$std.dev, xbar$sizes,2))
 
-# Specify the warning limits (1 sigmas)
+# Specify the warning limits (1 sigma)
 (warn.limits.1 = limits.xbar(xbar$center, xbar$std.dev, xbar$sizes,1))
 
 # Plot the x-bar chart
@@ -62,13 +62,13 @@ plot(xbar, restore.par = FALSE)
 abline(h = warn.limits.2, lty = 2, col = "blue")
 abline(h = warn.limits.1, lty = 2, col = "lightblue")
 
-# Get the summaries for x-bar chart
+# Get the summary for the x-bar chart
 summary(xbar)
 
 # Create the R-chart
 r_chart <- qcc(measure, type = "R", data.name = measure_unit)
 
-# Get the summaries for R-chart
+# Get the summary for the R-chart
 summary(r_chart)
 
 # Specify the lower control limit

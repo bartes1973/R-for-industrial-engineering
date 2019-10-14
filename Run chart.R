@@ -12,6 +12,7 @@ library(SixSigma)
 # Read the csv file and name it as df
 df <- data.frame(read.csv(file.choose(),header = FALSE))
 
+# Assign a header to the column
 colnames(df) <- "Measure"
 
 # Build the run chart

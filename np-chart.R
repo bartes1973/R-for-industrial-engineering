@@ -8,7 +8,7 @@
 # 2. The column should not have a header, the code will assign "Defects" as the column header
 # 3. Review you have installed the qcc package. Run the follwing code on the console: install.packages("qcc")
 
-# Import the qcc library
+# Import the qcc package
 library(qcc)
 
 # Read the csv file and name it as df

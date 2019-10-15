@@ -6,7 +6,7 @@
 # 2. For a better visualization of the checklist, press the zoomm bottom on the Plots tab
 # 3. R is not the most appropriate software to develop a checklist, this is just a really basic example of how to create one. For simplicity, it is highly recommended to use other programs
 
-# Import the grid library
+# Import the grid package
 library(grid)
 
 # Build external box

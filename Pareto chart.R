@@ -4,7 +4,7 @@
 
 # 1. Review you have installed the qcc package. Run the follwing code on the console: install.packages("qcc")
 
-# Import the qcc library
+# Import the qcc package
 library(qcc)                  
 
 # Create a vector with the number of defects per defect type

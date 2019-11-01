@@ -59,7 +59,7 @@ feat[[3]] <- list("","","")
 feat[[4]] <- list("","","")
 feat[[5]] <- list("","","")
 
-# Draw Process Map with the Six Sigma package
+# Draw Process Map with the SixSigma package
 ss.pMap(steps,inputs,outputs,io,param,feat,sub = "")
 
 # EXAMPLE

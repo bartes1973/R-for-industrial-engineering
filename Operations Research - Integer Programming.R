@@ -44,12 +44,12 @@ f.rhs <- c(14,
            12,
            15)
 
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,all.bin=TRUE)
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,all.bin=TRUE)$solution
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,all.bin=TRUE)
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,all.bin=TRUE)$solution
 
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$sens.coef.from
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$sens.coef.to
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,compute.sens=TRUE,all.bin=TRUE)$sens.coef.from
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,compute.sens=TRUE,all.bin=TRUE)$sens.coef.to
 
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$duals
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$duals.from
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$duals.to
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,compute.sens=TRUE,all.bin=TRUE)$duals
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,compute.sens=TRUE,all.bin=TRUE)$duals.from
+lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:4,compute.sens=TRUE,all.bin=TRUE)$duals.to

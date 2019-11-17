@@ -39,7 +39,10 @@ f.obj <- c(5,7)
 f.con <- matrix(c(1,0,
                   2,3,
                   1,1),nrow=3,byrow=TRUE)
-f.dir <- c("<=","<=","<=")
+f.dir <- c("<=",
+           "<=",
+           "<=")
+
 f.rhs <- c(16,
            19,
            8)

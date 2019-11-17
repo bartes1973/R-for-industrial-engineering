@@ -36,16 +36,19 @@ lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:,compute.sens=TRUE)$duals.to
 # EXAMPLE (Integer programming with binary variables)
 
 f.obj <- c(8,11,6,3)
-f.con <- matrix(c(5,7,0,3,8,0,4,4,2,10,6,4),nrow=3,byrow=TRUE)
+f.con <- matrix(c(5,7,0,3,
+                  8,0,4,4,
+                  2,10,6,4),nrow=3,byrow=TRUE)
 f.dir <- c("<=","<=","<=")
-f.rhs <- c(14,12,15)
+f.rhs <- c(14,
+           12,
+           15)
 
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,all.bin=TRUE)
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,all.bin=TRUE)$solution
 
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$sens.coef.from
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$sens.coef.to
-
 
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$duals
 lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2,compute.sens=TRUE,all.bin=TRUE)$duals.from

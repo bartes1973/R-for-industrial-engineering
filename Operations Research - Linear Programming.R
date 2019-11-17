@@ -40,7 +40,9 @@ f.con <- matrix(c(1,0,
                   2,3,
                   1,1),nrow=3,byrow=TRUE)
 f.dir <- c("<=","<=","<=")
-f.rhs <- c(16,19,8)
+f.rhs <- c(16,
+           19,
+           8)
 
 lp("max",f.obj,f.con,f.dir,f.rhs)
 lp("max",f.obj,f.con,f.dir,f.rhs)$solution

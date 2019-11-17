@@ -33,9 +33,6 @@ lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals
 lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals.from
 lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals.to
 
-# Assuming all variables are integer:
-lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:2)
-
 # EXAMPLE
 
 f.obj <- c(5,7)

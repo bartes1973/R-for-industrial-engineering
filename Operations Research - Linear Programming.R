@@ -29,7 +29,7 @@ lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$sens.coef.to
 # Duals of the constraints and variables are mixed
 lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals
 
-# Duals lower and upper limits:
+# Duals lower and upper limits
 lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals.from
 lp("max",f.obj,f.con,f.dir,f.rhs,compute.sens=TRUE)$duals.to
 

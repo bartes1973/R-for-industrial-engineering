@@ -35,7 +35,7 @@ lp("max",f.obj,f.con,f.dir,f.rhs,int.vec=1:,compute.sens=TRUE)$duals.to
 
 # EXAMPLE (Integer programming with binary variables)
 
-f.obj <- c(8,11,6,3)
+f.obj <- c(8,11,6,4)
 f.con <- matrix(c(5,7,0,3,
                   8,0,4,4,
                   2,10,6,4),nrow=3,byrow=TRUE)

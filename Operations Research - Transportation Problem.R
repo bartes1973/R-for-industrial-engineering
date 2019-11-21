@@ -8,7 +8,7 @@ costs <- matrix(c(),nrow=,byrow=TRUE)
 
 # Set customers and suppliers' names
 colnames(costs) <- c()
-row.names(costs) <- c()
+rownames(costs) <- c()
 
 # Set unequality/equality signs for suppliers
 row.signs <- rep("<=",)
@@ -34,7 +34,7 @@ library(lpSolve)
 
 costs <- matrix(c(10,2,20,11,12,7,9,20,4,14,16,18),nrow=3,byrow=TRUE)
 colnames(costs) <- c("Customer 1","Customer 2","Customer 3","Customer 4")
-row.names(costs) <- c("Supplier 1","Supplier 2","Supplier 3")
+rownames(costs) <- c("Supplier 1","Supplier 2","Supplier 3")
 
 row.signs <- rep("<=",3)
 row.rhs <- c(15,25,10)
